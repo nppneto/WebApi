@@ -1,0 +1,14 @@
+/home/nelson/Documentos/Projetos/WebApp2/bin/Debug/netcoreapp2.2/WebApp2.deps.json
+/home/nelson/Documentos/Projetos/WebApp2/bin/Debug/netcoreapp2.2/WebApp2.runtimeconfig.json
+/home/nelson/Documentos/Projetos/WebApp2/bin/Debug/netcoreapp2.2/WebApp2.runtimeconfig.dev.json
+/home/nelson/Documentos/Projetos/WebApp2/bin/Debug/netcoreapp2.2/WebApp2.dll
+/home/nelson/Documentos/Projetos/WebApp2/bin/Debug/netcoreapp2.2/WebApp2.pdb
+/home/nelson/Documentos/Projetos/WebApp2/obj/Debug/netcoreapp2.2/WebApp2.csprojAssemblyReference.cache
+/home/nelson/Documentos/Projetos/WebApp2/obj/Debug/netcoreapp2.2/WebApp2.csproj.CoreCompileInputs.cache
+/home/nelson/Documentos/Projetos/WebApp2/obj/Debug/netcoreapp2.2/WebApp2.RazorAssemblyInfo.cache
+/home/nelson/Documentos/Projetos/WebApp2/obj/Debug/netcoreapp2.2/WebApp2.RazorAssemblyInfo.cs
+/home/nelson/Documentos/Projetos/WebApp2/obj/Debug/netcoreapp2.2/WebApp2.AssemblyInfoInputs.cache
+/home/nelson/Documentos/Projetos/WebApp2/obj/Debug/netcoreapp2.2/WebApp2.AssemblyInfo.cs
+/home/nelson/Documentos/Projetos/WebApp2/obj/Debug/netcoreapp2.2/WebApp2.RazorTargetAssemblyInfo.cache
+/home/nelson/Documentos/Projetos/WebApp2/obj/Debug/netcoreapp2.2/WebApp2.dll
+/home/nelson/Documentos/Projetos/WebApp2/obj/Debug/netcoreapp2.2/WebApp2.pdb
