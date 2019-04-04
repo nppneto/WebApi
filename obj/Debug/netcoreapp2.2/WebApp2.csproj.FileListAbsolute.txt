@@ -12,3 +12,17 @@
 /home/nelson/Documentos/Projetos/WebApp2/obj/Debug/netcoreapp2.2/WebApp2.RazorTargetAssemblyInfo.cache
 /home/nelson/Documentos/Projetos/WebApp2/obj/Debug/netcoreapp2.2/WebApp2.dll
 /home/nelson/Documentos/Projetos/WebApp2/obj/Debug/netcoreapp2.2/WebApp2.pdb
+C:\Users\Nelson\Documents\Projetos\WebApi\obj\Debug\netcoreapp2.2\WebApp2.csprojAssemblyReference.cache
+C:\Users\Nelson\Documents\Projetos\WebApi\obj\Debug\netcoreapp2.2\WebApp2.csproj.CoreCompileInputs.cache
+C:\Users\Nelson\Documents\Projetos\WebApi\obj\Debug\netcoreapp2.2\WebApp2.RazorAssemblyInfo.cache
+C:\Users\Nelson\Documents\Projetos\WebApi\obj\Debug\netcoreapp2.2\WebApp2.RazorAssemblyInfo.cs
+C:\Users\Nelson\Documents\Projetos\WebApi\obj\Debug\netcoreapp2.2\WebApp2.AssemblyInfoInputs.cache
+C:\Users\Nelson\Documents\Projetos\WebApi\obj\Debug\netcoreapp2.2\WebApp2.AssemblyInfo.cs
+C:\Users\Nelson\Documents\Projetos\WebApi\obj\Debug\netcoreapp2.2\WebApp2.dll
+C:\Users\Nelson\Documents\Projetos\WebApi\obj\Debug\netcoreapp2.2\WebApp2.pdb
+C:\Users\Nelson\Documents\Projetos\WebApi\bin\Debug\netcoreapp2.2\WebApp2.deps.json
+C:\Users\Nelson\Documents\Projetos\WebApi\bin\Debug\netcoreapp2.2\WebApp2.runtimeconfig.json
+C:\Users\Nelson\Documents\Projetos\WebApi\bin\Debug\netcoreapp2.2\WebApp2.runtimeconfig.dev.json
+c:\Users\Nelson\Documents\Projetos\WebApi\bin\Debug\netcoreapp2.2\WebApp2.dll
+c:\Users\Nelson\Documents\Projetos\WebApi\bin\Debug\netcoreapp2.2\WebApp2.pdb
+c:\Users\Nelson\Documents\Projetos\WebApi\obj\Debug\netcoreapp2.2\WebApp2.RazorTargetAssemblyInfo.cache
