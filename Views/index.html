@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastrar</title>
+</head>
+<body>
+
+    <h2 id="titulo">Cadastrar Aluno</h2>
+
+    <div><label>Nome:</label><input id="inputNome" type="text"></div>
+    <div><label>Sobrenome:</label><input id="inputSobrenome" type="text"></div>
+    <div><label>Telefone:</label><input id="inputTelefone" type="text"></div>
+    <div><label>RA:</label><input id="inputRA" type="text"></div>
+
+    <div>
+        <button id="btnSalvar" onclick="Cadastrar()">Cadastrar</button>
+        <button id="btnCancelar" onclick="Cancelar()">Limpar</button>
+    </div>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <td>Nome</td>
+                <td>Sobrenome</td>
+                <td>Telefone</td>
+                <td>RA</td>
+                <td>Opções</td>
+            </tr>
+        </thead>
+        <tbody><!--Resultado da Tabela--></tbody>
+    </table>
+
+    <script type="text/javascript">
+
+        var tbody = document.querySelector('table tbody');
+        var aluno = {};
+
+        function Cadastrar() 
+        {
+            aluno.nome = document.querySelector('#inputNome').value,
+            aluno.sobrenome = document.querySelector('#inputSobrenome').value,
+            aluno.telefone = document.querySelector('#inputTelefone').value,
+            aluno.ra = document.querySelector('#inputRA').value
+
+            console.log(aluno);
+
+            if(aluno.id === undefined || aluno.id === 0)
+            {
+                salvarEstudantes('POST', 0, aluno);
+            } 
+            else 
+            {
+                salvarEstudantes('PUT', aluno.id, aluno);
+            }
+
+            carregarEstudantes();
+        }
+
+        function Cancelar()
+        {
+            var btnSalvar = document.querySelector('#btnSalvar');
+            var btnCancelar = document.querySelector('#btnCancelar');
+
+            btnSalvar.textContent = 'Cadastrar';
+            btnCancelar.textContent = 'Limpar';
+
+            document.querySelector('#inputNome').value = "";
+            document.querySelector('#inputSobrenome').value = "";
+            document.querySelector('#inputTelefone').value = "";
+            document.querySelector('#inputRA').value = "";
+
+            //Limpar o objeto
+            aluno = {};
+
+            titulo.textContent = "Cadastrar Aluno";
+        }
+
+        function carregarEstudantes() 
+        {
+
+            tbody.innerHTML = '';
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.open('GET', `http://localhost:5000/api/aluno/`, true);
+
+            xhr.onload = function () 
+            {
+                var estudantes = JSON.parse(this.responseText);
+
+                for(var indice in estudantes) 
+                {
+                    carregarDadosTabela(estudantes[indice]);
+                };
+            };
+        
+            xhr.send();
+        }
+
+        function salvarEstudantes(metodo, id, estudante) 
+        {
+
+            var xhr = new XMLHttpRequest();
+
+            if(id === undefined || id === 0)
+                id = '';
+
+            xhr.open(metodo, `http://localhost:5000/api/aluno/${id}`, false);
+
+            xhr.setRequestHeader('content-type', 'application/json');
+            xhr.send(JSON.stringify(estudante));
+
+            
+        }
+
+        carregarEstudantes();
+
+        function carregarDadosTabela(estudante) 
+        {
+            var trow = `<tr>
+                            <td>${estudante.nome}</td>
+                            <td>${estudante.sobrenome}</td>
+                            <td>${estudante.telefone}</td>
+                            <td>${estudante.ra}</td>
+                            <td>
+                                <button onclick='editarEstudante(${JSON.stringify(estudante)})'>Editar</button>
+                                <button onclick='excluirEstudante(${estudante.id})'>Excluir</button>
+                            </td>
+                        </tr>
+                        `;
+            
+            tbody.innerHTML += trow;
+        }
+
+        function editarEstudante(estudante) 
+        {
+            var btnSalvar = document.querySelector('#btnSalvar');
+            var btnCancelar = document.querySelector('#btnCancelar');
+
+            btnSalvar.textContent = 'Salvar';
+            btnCancelar.textContent = 'Cancelar';
+
+            titulo.textContent = `Editar Aluno ${estudante.nome}`;
+
+            document.querySelector('#inputNome').value = estudante.nome;
+            document.querySelector('#inputSobrenome').value = estudante.sobrenome;
+            document.querySelector('#inputTelefone').value = estudante.telefone;
+            document.querySelector('#inputRA').value = estudante.ra;
+
+            aluno = estudante;
+
+            console.log(aluno);
+        }
+
+        function excluir(id) 
+        {
+            var xhr = new XMLHttpRequest();
+
+            xhr.open('DELETE', `http://localhost:5000/api/aluno/${id}`, false);
+
+            xhr.send();
+        }
+
+        function excluirEstudante(id)
+        {
+            excluir(id);
+            carregarEstudantes();
+        }
+
+    </script>
+</body>
+</html>

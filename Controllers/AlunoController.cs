@@ -2,11 +2,16 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+// using System.Web.Http.Cors;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using WebApp2.Models;
 
 namespace WebApp2.Controllers
 {
+
+    //Habilito a configuração de CORS, criada no meu Startup
+    [EnableCors("AllowCors")]
     [Route("api/[controller]")]
     public class AlunoController : Controller
     {

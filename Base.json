@@ -3,7 +3,7 @@
     "id": 1,
     "nome": "Nelson",
     "sobrenome": "Neto",
-    "telefone": "996852147",
+    "telefone": "997425858",
     "ra": 115156
   },
   {
@@ -26,5 +26,47 @@
     "sobrenome": "Guilherme",
     "telefone": "99784587",
     "ra": 115159
+  },
+  {
+    "id": 6,
+    "nome": "Bryan",
+    "sobrenome": "Alves",
+    "telefone": "997415487",
+    "ra": 115161
+  },
+  {
+    "id": 7,
+    "nome": "Juliana",
+    "sobrenome": "Pereira",
+    "telefone": "996117111",
+    "ra": 115162
+  },
+  {
+    "id": 8,
+    "nome": "Regina",
+    "sobrenome": "Nascimento",
+    "telefone": "998447411",
+    "ra": 115163
+  },
+  {
+    "id": 9,
+    "nome": "Nelson",
+    "sobrenome": "Junior",
+    "telefone": "997414569",
+    "ra": 115164
+  },
+  {
+    "id": 10,
+    "nome": "Celestina",
+    "sobrenome": "Alves",
+    "telefone": "996857413",
+    "ra": 115165
+  },
+  {
+    "id": 11,
+    "nome": "Renan",
+    "sobrenome": "Starnini",
+    "telefone": "997587421",
+    "ra": 115160
   }
 ]

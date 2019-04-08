@@ -10,9 +10,6 @@ namespace WebApp2.Models
 {
     public class Aluno
     {
-        // private IHostingEnvironment _environment;
-
-        // public IHostingEnvironment environment { get; set; }
         public int id { get; set; }
         public string nome { get; set; }
         public string sobrenome { get; set; }
